@@ -1,7 +1,7 @@
 /**
  * The cdsframework common project implements some base framework functionality.
  *
- * Copyright 2016 HLN Consulting, LLC
+ * Copyright 2019 HLN Consulting, LLC
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -56,7 +56,7 @@ public class LoggerComparisonTest {
     public void testLogUtilsApple() {
         final LogUtils loggerUtils = LogUtils.getLogger(LoggerComparisonTest.class);
         long logUtils = 0;
-        long maxIter = 300;
+        long maxIter = 100;
         loggerUtils.info("logUtils - init");
 
         System.out.println("testLoggerComparison");

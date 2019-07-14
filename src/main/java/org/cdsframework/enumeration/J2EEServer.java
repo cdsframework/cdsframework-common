@@ -24,11 +24,18 @@ package org.cdsframework.enumeration;
  *
  * @author HLN Consulting, LLC
  */
-public enum LogLevel {
-    TRACE,
-    DEBUG,
-    INFO,
-    WARN,
-    ERROR,
-    FATAL
+public enum J2EEServer {
+    GlassFish, JBoss;
+    
+    public static J2EEServer valueOfCode(String code) {
+        J2EEServer result = null;
+        for (J2EEServer item : values()) {
+            if (item.name().equalsIgnoreCase(code)) {
+                result = item;
+                break;
+            }
+        }
+        return result;
+    }
+    
 }
