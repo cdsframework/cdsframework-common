@@ -29,7 +29,6 @@
   <servers>
     <server>
       <id>github</id>
-      <username>nicolary</username>
       <password>${token}</password>
     </server>
   </servers>
