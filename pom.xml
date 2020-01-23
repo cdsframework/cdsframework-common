@@ -40,6 +40,14 @@
         </dependency>
     </dependencies>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub cdsframework Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/cdsframework/cdsframework-common</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <finalName>${project.artifactId}</finalName>
         <plugins>
